@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="./dist/all.min.css">
   <link rel="stylesheet" href="./dist/output.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -20,29 +22,32 @@
   </style>
 </head>
 
-<body class="center flex-col gap-5 h-screen bg-[#0b1726]">
+<body class="center flex-col gap-5 h-screen bg-mainBg">
 
-  <div class="bg-[#162c40] p-5 space-y-4 w-80 rounded-xl shadow-md">
+  <div class="bg-cardBg p-5 space-y-4 w-80 rounded-xl shadow-md">
     <div class="group cursor-pointer relative overlay hover:before:scale-100">
       <img class="w-full rounded-md" src="./img/image-equilibrium.jpg" alt="">
       <img class="show-me group-hover:scale-100" src="img/icon-view.svg" alt="">
     </div>
-    <h2 class="text-white text-xl font-bold transition-all duration-300 cursor-pointer hover:text-[#1bf2dd]">Equilibrium
+    <h2 class="text-white text-xl font-bold transition-all duration-300 cursor-pointer hover:text-secC">Equilibrium
       #3429</h2>
 
-    <p class="text-[#6f83a8]">Our Equilibrium collection promotes balance and calm.</p>
+    <p class="text-mainC">Our Equilibrium collection promotes balance and calm.</p>
 
-    <div class="between"><span class="text-[#1bf2dd] f-custom"><img src="img/icon-ethereum.svg" alt="">0.041 ETH</span>
-      <span class="text-[#6f83a8] f-custom"><img src="img/icon-clock.svg" alt=""> 3 days left</span></div>
+    <div class="between"><span class="text-secC f-custom"><img src="img/icon-ethereum.svg" alt="">0.041 ETH</span>
+      <span class="text-mainC f-custom"><img src="img/icon-clock.svg" alt=""> 3 days left</span>
+    </div>
 
-    <div class="text-[#6f83a8] f-custom pt-3 border-solid border-t-2 border-[#6f83a8aa]"><img
+    <div class="text-mainC f-custom pt-3 border-solid border-t-2 border-line"><img
         class="w-8 border-solid border-2 border-white rounded-full" src="img/image-avatar.png" alt=""> Creation of <span
-        class="text-white transition-all duration-300 cursor-pointer hover:text-[#1bf2dd]">Jules Wyvern</span></div>
+        class="text-white transition-all duration-300 cursor-pointer hover:text-secC">Jules Wyvern</span></div>
   </div>
 
   <div class="text-white attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-[#1bf2dd]">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/AIMIMA" target="_blank" class="text-[#1bf2dd]">Abdullah Ibrahim Mohammed</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-secC">Frontend
+      Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/AIMIMA" target="_blank" class="text-secC">Abdullah Ibrahim
+      Mohammed</a>.
   </div>
 </body>
 
