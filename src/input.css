@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .between {
+    @apply flex justify-between items-center;
+  }
+
+  .f-custom {
+    @apply flex items-center gap-2;
+  }
+
+  .overlay {
+    @apply before:content-[''] before:absolute before:w-full before:h-full before:bg-[#1bf2dd] before:rounded-md before:opacity-30 before:scale-0 before:transition-all before:duration-300;
+  }
+
+  .show-me {
+    @apply absolute transition-all duration-300 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 scale-0;
+  }
+}

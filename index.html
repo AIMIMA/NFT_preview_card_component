@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./dist/all.min.css">
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body class="center flex-col gap-5 h-screen bg-[#0b1726]">
+
+  <div class="bg-[#162c40] p-5 space-y-4 w-80 rounded-xl shadow-md">
+    <div class="group cursor-pointer relative overlay hover:before:scale-100">
+      <img class="w-full rounded-md" src="./img/image-equilibrium.jpg" alt="">
+      <img class="show-me group-hover:scale-100" src="img/icon-view.svg" alt="">
+    </div>
+    <h2 class="text-white text-xl font-bold transition-all duration-300 cursor-pointer hover:text-[#1bf2dd]">Equilibrium
+      #3429</h2>
+
+    <p class="text-[#6f83a8]">Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="between"><span class="text-[#1bf2dd] f-custom"><img src="img/icon-ethereum.svg" alt="">0.041 ETH</span>
+      <span class="text-[#6f83a8] f-custom"><img src="img/icon-clock.svg" alt=""> 3 days left</span></div>
+
+    <div class="text-[#6f83a8] f-custom pt-3 border-solid border-t-2 border-[#6f83a8aa]"><img
+        class="w-8 border-solid border-2 border-white rounded-full" src="img/image-avatar.png" alt=""> Creation of <span
+        class="text-white transition-all duration-300 cursor-pointer hover:text-[#1bf2dd]">Jules Wyvern</span></div>
+  </div>
+
+  <div class="text-white attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-[#1bf2dd]">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/AIMIMA" target="_blank" class="text-[#1bf2dd]">Abdullah Ibrahim Mohammed</a>.
+  </div>
+</body>
+
+</html>
